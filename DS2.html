@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Literature Club | Acceptance</title>
+
+    <!-- PyScript -->
+    <link rel="stylesheet"
+        href="https://pyscript.net/releases/2026.7.3/core.css">
+
+    <script type="module"
+        src="https://pyscript.net/releases/2026.7.3/core.js">
+    </script>
+
+</head>
+
+<body>
+
+    <!-- MAIN LITERATURE CLUB CARD -->
+    <div class="container">
+
+        <!-- TOP BAR -->
+        <div class="topline">
+
+            <div class="club-label">
+                <span class="symbol">✦</span>
+                <span>LITERATURE CLUB</span>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                <span>SYSTEM ONLINE</span>
+            </div>
+
+    <h6>Home Page</h6>
+        <a href="index.html">Log-in</a>
+     <h7>Element Checker </h7>
+        <a href="SkillsTest.html">Check Elements</a>
+    <h8>Meet The Creator</h8>
+        <a href="Project.html">About Me</a>
+        </div>
+
+        <!-- PAGE HEADER -->
+        <header>
+
+            <p class="eyebrow">
+                A SANCTUARY FOR STORIES
+            </p>
+
+            <h1>
+                Literature <span>Club</span>
+            </h1>
+
+            <h4>
+                CLUB ACCEPTANCE
+            </h4>
+
+        </header>
+
+        <!-- MEMBERSHIP FORM -->
+        <main class="form-area">
+
+            <div class="field">
+                <label for="first_name">
+                    FIRST NAME
+                </label>
+
+                <input
+                    type="text"
+                    id="first_name"
+                    name="first_name"
+                    placeholder="Enter first name"
+                    autocomplete="given-name"
+                    required
+                >
+            </div>
+
+            <div class="field">
+                <label for="last_name">
+                    LAST NAME
+                </label>
+
+                <input
+                    type="text"
+                    id="last_name"
+                    name="last_name"
+                    placeholder="Enter last name"
+                    autocomplete="family-name"
+                    required
+                >
+            </div>
+
+            <!-- Connected to check_membership() in main.py -->
+            <button
+                type="button"
+                py-click="check_membership"
+            >
+                CHECK
+            </button>
+
+            <!-- Python-generated messages appear here -->
+            <div id="output1" aria-live="polite">
+                AWAITING YOUR ENTRY...
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <span>
+                READ<span class="footer-symbol">.</span>
+                REFLECT<span class="footer-symbol">.</span>
+                REIMAGINE<span class="footer-symbol">.</span>
+            </span>
+
+        </footer>
+
+    </div>
+
+    <!-- LOAD PYTHON FILE -->
+    <script type="py" src="./main.py"></script>
+
+</body>
+</html>

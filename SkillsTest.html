@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module"
+        src="https://pyscript.net/releases/2026.7.3/core.js">
+    </script>
+
+    <title>ICT 10</title>
+    <title>ICT SkillsTest</title>
+
+</head>
+<body>
+    <div class="container">
+        <h6>Home Page</h6>
+        <a href="index.html">Log-in</a>
+        <h7>Club Members </h7>
+        <a href="DS2.html">Check members</a>
+        <h8>Meet The Creator</h8>
+        <a href="Project.html">About Me</a>
+  <!------------------------------------------>
+        <h1>Non-Metals Information</h1>
+        <p> Enter element symbol to search</p>
+
+        <input type="text" id="element1" placeholder="Example: Xe">
+    </div>
+        <br>
+
+        <button py-click="Search_Element">
+            Search Element
+
+        </button>
+        <div class="result"></div>
+
+        <h3> Search Result</h3>
+
+        <p><b> Element Symbol:  <span id = "symbol"></span></b></p>
+        <p><b> Element Name:  <span id = "name"></span></b></p>
+        <p><b> Atomic No. :  <span id = "num"></span></b></p>
+        <p><b> Atomic Mass:  <span id = "mass"></span></b></p>
+
+       <!--Useed to connect the code to the main.py-->
+    <script type="py" src="main.py"></script>
+</body>
+</html>
